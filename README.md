@@ -38,25 +38,8 @@ Reference library used: https://unit8co.github.io/darts/generated_api/darts.mode
    # invert scale
    fc = scaler.inverse_transform(fc_scaled) (reversed scaled to get original data)
    # clamp negatives to zero
-   fc_nonneg = fc.with_values(np.clip(fc.values(), 0, None)) (forecast values are unbounded, so this has been made range bound to avoid negatives)
+   fc_nonneg = fc.with_values(np.clip(fc.values(), 0, None)) (forecast values are unbounded, so this has been made range bound to avoid negatives
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#Tools used: Github CoPilot, AWS Q
+#Tools used: Used Paperspace GPU to train the NBEATS model. on A4000 GPU
