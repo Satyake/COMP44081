@@ -1,14 +1,9 @@
 # Daily Sales Forecasting with N-BEATS
 
 ## Overview
-- Forecasts **daily sales** using a purely deep-learning architecture (N-BEATS) that automatically captures seasonality, trends, and short-term fluctuations.  
-- Employs a **5-fold time-series split** with a fixed 365-day hold-out per fold to ensure robust generalization.  
-- Normalizes inputs via a scaler and inversely transforms predictions back to original units for interpretability.  
-- Clips any negative outputs to zero so all forecasts remain non-negative.  
-- Evaluates accuracy using **RMSE** (root-mean-square error) on unseen test folds.  
-- Provides visual plots overlaying training data, actuals, and forecasts for easy diagnostic review.
-
-## Technical Details
+- Forecast **daily sales** using the N-BEATS Model (deep learning-based), which captures trends, seasonality, and short-term changes.
+  
+## Flow of the code:
 
 1. **Data Splitting**  
    - **Training**: all but the final 365 days of each fold.  
