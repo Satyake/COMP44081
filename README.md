@@ -1,4 +1,4 @@
-# Daily Sales Forecasting with N-BEATS
+# Daily Sales Forecasting with N-BEATS (Proposed Model)
 Reference library used: https://unit8co.github.io/darts/generated_api/darts.models.forecasting.nbeats.html#darts.models.forecasting.nbeats.NBEATSModel
 
 ## Overview
