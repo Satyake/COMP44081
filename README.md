@@ -11,7 +11,7 @@ This resulted in a  good forecast of 365 days on the test horizon.
 Reference library used: https://unit8co.github.io/darts/generated_api/darts.models.forecasting.nbeats.html#darts.models.forecasting.nbeats.NBEATSModel
 
 ## Overview
-- Forecast **daily sales** using the N-BEATS Model (deep learning-based) [N-BEATS: Neural basis expansion analysis for interpretable time series forecasting]
+- For forecasting the  **daily sales** I have used the very popular  N-BEATS Model (deep learning-based) [N-BEATS: Neural basis expansion analysis for interpretable time series forecasting]
 - Reason for choosing NBEATS: The model learns and  captures trends, seasonality, and short-term changes.
 - The Model is in boosting model. Each submodel generates a forecast and a backcast with residuals, which are fed to the subsequent models.
 - The Sub Model generates a 
