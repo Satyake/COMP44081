@@ -27,8 +27,9 @@ Reference library used: https://unit8co.github.io/darts/generated_api/darts.mode
    - **Test**: final 365 days, or Out of Time OOT 
 
 2. **Preprocessing**  
-   - I have scaled both the train and validation data.
+   
    - The data has been resampled to a Daily frequency from the 15-minute differences.
+   - - I have scaled both the train and validation data.
 
 3. **Model Architecture**  
    - **N-BEATSModel** with:
