@@ -20,7 +20,6 @@
      - `output_chunk_length = 365`  
      - `n_epochs = 50`  
      - `random_state = 43`  
-   - Trained on GPU; optional PyTorch-Lightning `EarlyStopping` (`monitor="val_loss"`, `patience=10`).
 
 4. **Forecasting & Post-processing**  
    ```python
