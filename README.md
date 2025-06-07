@@ -25,7 +25,7 @@
 4. **Forecasting & Post-processing**  
    ```python
    # raw forecast on normalized scale
-   fc_scaled = model.predict(365)
+   fc_scaled = model.predict(365) #predict next 1 year of daily sales
    # invert scale
    fc = scaler.inverse_transform(fc_scaled)
    # clamp negatives to zero
