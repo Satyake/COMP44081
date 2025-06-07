@@ -1,4 +1,5 @@
 # Daily Sales Forecasting with N-BEATS
+Reference library used: https://unit8co.github.io/darts/generated_api/darts.models.forecasting.nbeats.html#darts.models.forecasting.nbeats.NBEATSModel
 
 ## Overview
 - Forecast **daily sales** using the N-BEATS Model (deep learning-based), which captures trends, seasonality, and short-term changes.
@@ -32,4 +33,4 @@
 
 
 
-#Tools used: Github CoPilot
+#Tools used: Github CoPilot, AWS Q
