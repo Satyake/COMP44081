@@ -1,3 +1,12 @@
+# Volume Forecasting
+The original code provided does not include trend and seasonality, and uses the standard stats model library.
+If we inspect the data, we see that there is a  strong seasonality component and trend when we decompose it.
+
+I have used Exponential Smoothing with the Holt-Winters method, which accounts for both trend and seasonality as an additive component.
+This resulted in a  good forecast of 365 days on the test horizon.
+
+
+
 # Daily Sales Forecasting with N-BEATS (Proposed Model)
 Reference library used: https://unit8co.github.io/darts/generated_api/darts.models.forecasting.nbeats.html#darts.models.forecasting.nbeats.NBEATSModel
 
@@ -30,6 +39,23 @@ Reference library used: https://unit8co.github.io/darts/generated_api/darts.mode
    fc = scaler.inverse_transform(fc_scaled)
    # clamp negatives to zero
    fc_nonneg = fc.with_values(np.clip(fc.values(), 0, None))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
