@@ -28,7 +28,7 @@ performance = {
         4: 0.8280584686316488
     }
 }
-
+```
 **Model_updated.py** has the new model.
 
 # Daily Sales Forecasting with N-BEATS (Proposed Model)
@@ -82,5 +82,5 @@ performance = {
     'Fold4': 0.648070948148359,
     'Fold5': 0.9550531186255872
 }
-
+```
 #Tools used: Used Paperspace GPU to train the NBEATS model on A4000 GPU, DARTS Documentation, and AWS Q Coding Assistant.
