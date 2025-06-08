@@ -33,14 +33,16 @@ Reference library used: https://unit8co.github.io/darts/generated_api/darts.mode
 2. **Preprocessing**  
    
    - The data has been resampled to a Daily frequency from the 15-minute differences.
-   - - I have scaled both the train and validation data.
+   - I have scaled both the training and validation data.
 
 3. **Model Architecture**  
    - **N-BEATSModel** with:
      - `input_chunk_length = 365` #This is the backcast #The model looks 365 days before and forecasts 365 days forward #NBEATS uses a backcast and forecast
      - `output_chunk_length = 365` 
      - `n_epochs = 50`  
-     - `random_state = 43`  
+
+    - I did use Early Stopping (Commented out Early Stopping, due to a bug in Paperspace)
+    - The Final Model is the best-trained model with the optimized weights (Retrained with ES on Google colab).
 
 4. **Forecasting & Post-processing**  
    ```python
@@ -49,8 +51,13 @@ Reference library used: https://unit8co.github.io/darts/generated_api/darts.mode
    # invert scale
    fc = scaler.inverse_transform(fc_scaled) (reversed scaled to get original data)
    # clamp negatives to zero
-   fc_nonneg = fc.with_values(np.clip(fc.values(), 0, None)) (forecast values are unbounded, so this has been made range bound to avoid negatives
+   fc_nonneg = fc.with_values(np.clip(fc.values(), 0, None)) (forecast values are unbounded, so this has been made range-bound to avoid negatives
 
+5. ** Performance** (NBEATS)
+[Fold1: 0.6961632335034433,
+ Fold2: 2.508953940001475,
+ Fold3: 0.6507345731317645,
+ Fold4: 0.648070948148359,
+ Fold5: 0.9550531186255872]
 
-
-#Tools used: Used Paperspace GPU to train the NBEATS model on A4000 GPU
+#Tools used: Used Paperspace GPU to train the NBEATS model on A4000 GPU, DARTS Documentation, and AWS Q Coding Assistant.
