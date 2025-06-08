@@ -28,7 +28,7 @@ performance = {
         4: 0.8280584686316488
     }
 }
-  
+
 **Model_updated.py** has the new model.
 
 # Daily Sales Forecasting with N-BEATS (Proposed Model)
@@ -74,10 +74,13 @@ Reference library used: https://unit8co.github.io/darts/generated_api/darts.mode
    fc_nonneg = fc.with_values(np.clip(fc.values(), 0, None)) (forecast values are unbounded, so this has been made range-bound to avoid negatives
 
 5. ** Performance** (NBEATS)- MAPE values
-[Fold1: 0.6961632335034433,
- Fold2: 2.508953940001475,
- Fold3: 0.6507345731317645,
- Fold4: 0.648070948148359,
- Fold5: 0.9550531186255872]
+```python
+performance = {
+    'Fold1': 0.6961632335034433,
+    'Fold2': 2.508953940001475,
+    'Fold3': 0.6507345731317645,
+    'Fold4': 0.648070948148359,
+    'Fold5': 0.9550531186255872
+}
 
 #Tools used: Used Paperspace GPU to train the NBEATS model on A4000 GPU, DARTS Documentation, and AWS Q Coding Assistant.
