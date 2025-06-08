@@ -9,16 +9,25 @@ This resulted in a  good forecast of 365 days on the test horizon.
 
 **HoltWinters with trend and seasonality.ipynb** -> This has the full code 
 
-**Performance**:
-    
-Based_Modified Model (Holt Winters method)
-[Fold1: 0.6864071360363305,
- Fold2: 1.1035446150422632,
- Fold3: 0.6599292290207176,
- Fold4: 1.1365194991888812,
- Fold5: 0.8280584686316488
- ]
+**Performance**: MAPE values
 
+```python
+performance = {
+    'Base': {
+        0: 1.529857106512923,
+        1: 0.8931257429195898,
+        2: 0.8565136047622175,
+        3: 0.849004666557113,
+        4: 0.8623397604001105
+    },
+    'Base_modified': {
+        0: 0.6864071360363305,
+        1: 1.1035446150422632,
+        2: 0.6599292290207176,
+        3: 1.1365194991888812,
+        4: 0.8280584686316488
+    }
+}
   
 **Model_updated.py** has the new model.
 
@@ -64,7 +73,7 @@ Reference library used: https://unit8co.github.io/darts/generated_api/darts.mode
    # clamp negatives to zero
    fc_nonneg = fc.with_values(np.clip(fc.values(), 0, None)) (forecast values are unbounded, so this has been made range-bound to avoid negatives
 
-5. ** Performance** (NBEATS)
+5. ** Performance** (NBEATS)- MAPE values
 [Fold1: 0.6961632335034433,
  Fold2: 2.508953940001475,
  Fold3: 0.6507345731317645,
