@@ -1,4 +1,4 @@
-# Volume Forecasting
+# Volume Forecasting (Modified with Holt-Winter Methods)
 The original code provided does not include trend and seasonality, and uses the standard stats model library.
 If we inspect the data, we see that there is a  strong seasonality component and trend when we decompose it.
 
