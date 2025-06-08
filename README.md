@@ -2,6 +2,7 @@
 The original code provided does not include trend and seasonality, and uses the standard stats model library.
 If we inspect the data, we see that there is a  strong seasonality component and trend when we decompose it.
 
+
 I have used Exponential Smoothing with the Holt-Winters method, which accounts for both trend and seasonality as an additive component.
 This resulted in a  good forecast of 365 days on the test horizon.
 
