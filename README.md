@@ -16,7 +16,8 @@ Based_Modified Model (Holt Winters method)
  Fold2: 1.1035446150422632,
  Fold3: 0.6599292290207176,
  Fold4: 1.1365194991888812,
- Fold5: 0.8280584686316488]
+ Fold5: 0.8280584686316488
+ ]
 
   
 **Model_updated.py** has the new model.
