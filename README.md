@@ -10,7 +10,7 @@ This resulted in a  good forecast of 365 days on the test horizon.
 **HoltWinters with trend and seasonality.ipynb** -> This has the full code 
 
 **Performance**:
-<details>
+
 <summary>
 performance = {
     'Base': {0: 1.529857106512923, 1: 0.8931257429195898, 2: 0.8565136047622175, 3: 0.849004666557113, 4: 0.8623397604001105},
@@ -18,7 +18,7 @@ performance = {
 }
 </summary>
 
-</details>
+
 
   
 **Model_updated.py** has the new model.
