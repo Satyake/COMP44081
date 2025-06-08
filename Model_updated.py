@@ -103,7 +103,7 @@ class RedemptionModel:
         
         #using holt winters to account for trend and seasonality
         #series=train[self.target_col]
-        series = np.log1p(train[self.target_col])
+        series = np.log1p(train[self.target_col]) #log transforming the data yeilded  better results. Compressing large values to a smaller once, reduces the variance
 
         hw=ExponentialSmoothing(
             series,
