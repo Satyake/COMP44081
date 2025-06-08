@@ -7,7 +7,9 @@ The original model did not have a trend component in it.
 I have used Exponential Smoothing with the Holt-Winters method, which accounts for both trend and seasonality as an additive component.
 This resulted in a  good forecast of 365 days on the test horizon.
 
+HoltWinters with trend and seasonality.ipynb -> This has the full code 
 
+Modified_model.py has the Model file
 
 # Daily Sales Forecasting with N-BEATS (Proposed Model)
 Reference library used: https://unit8co.github.io/darts/generated_api/darts.models.forecasting.nbeats.html#darts.models.forecasting.nbeats.NBEATSModel
